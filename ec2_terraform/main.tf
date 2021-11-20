@@ -36,7 +36,7 @@ resource "aws_security_group" "security_jenkins_port" {
 }
 
 resource "aws_instance" "myFirstInstance" {
-  ami           = "ami-0b0af3577fe5e3532"
+  ami           = "ami-04902260ca3d33422"
   key_name = var.key_name
   instance_type = var.instance_type
   security_groups= [ "security_jenkins_port"]
